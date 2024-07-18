@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Título de la página</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      width: 100%;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 10px;
+      border: 3px solid #000; /* Ajusta el grosor y el color del borde */
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border: 3px solid #000;
+      text-align: center;
+    }
+
+
+    th {
+      font-weight: bold;
+    }
+
+    td {
+      border-left: 2px solid #000;
+      border-right: 2px solid #000;
+    }
+
+    td:hover {
+      background-color: #f2f2f2;
+    }
+
+    .NARAboton1 {
+      width: 30px;
+      height: 30px;
+      background-color: #80CE15;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .NARAboton2 {
+      width: 30px;
+      height: 30px;
+      background-color: #FA3636;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .NARAtxtNombre {
+      background-color: #D3DFFF;
+    }
+    .NARAboton3 {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4977FE;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .textbox-container {
+        display: inline-block;
+        margin-right: 20px;
+    }
+  </style>
+
+</head>
+<body>
+  <div>
+    <div class="row">
+        <div class="textbox-container">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" placeholder="" style="width: 300px; height: 40px; border-width: 2px;">
+        </div>
+    
+        <div class="textbox-container">
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" class="NARAtxtNombre" placeholder="" style="width: 300px; height: 40px; border-width: 2px;">
+        </div>
+    </div><br>
+
+    <button class="NARAboton3">Buscar</button><br><br>
+
+    <!-- TABLA-->
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Categoria</th>
+        <th>Acciones</th>
+      </tr>
+
+      <tr>
+        <td>Marvin</td>
+        <td>Barrera</td>
+        <td>Gerentes</td>
+        <td>
+          <button class="NARAboton1">
+            <span style="color: white;">E</span>
+          </button>
+          <button class="NARAboton2">
+            <span style="color: white;">D</span>
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Mateo</td>
+        <td>Rivas</td>
+        <td>Gerentes</td>
+        <td>
+          <button class="NARAboton1">
+            <span style="color: white;">E</span>
+          </button>
+          <button class="NARAboton2">
+            <span style="color: white;">D</span>
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
